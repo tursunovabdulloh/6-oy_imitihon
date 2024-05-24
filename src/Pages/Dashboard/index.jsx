@@ -16,6 +16,10 @@ function Dashboard() {
   });
   const [errors, setErrors] = useState({});
   const navigate = useNavigate();
+     
+  function save() {
+  
+  }
 
   useEffect(() => {
     async function fetchCategories() {
@@ -43,8 +47,11 @@ function Dashboard() {
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
+  const newArr = [] 
 
   const handleSubmit = async (e) => {
+
+
     e.preventDefault();
     if (!validate()) return;
 
@@ -52,8 +59,11 @@ function Dashboard() {
       ...userInput,
       images: [userInput.images],
     };
-    console.log(productData);
-
+    if(productData){
+      productData,
+      newArr.push(productData)
+    }
+    console.log(newArr)
     try {
       const req = await fetch("https://api.escuelajs.co/api/v1/products/", {
         method: "POST",
@@ -66,6 +76,7 @@ function Dashboard() {
       const res = await req.json();
       console.log(res);
       localStorage.setItem("ProductsData", JSON.stringify([res]));
+      localStorage.setItem("ProductItem", JSON.stringify(newArr));
       navigate("/products");
     } catch (error) {
       console.error("Error creating product:", error);
@@ -153,7 +164,9 @@ function Dashboard() {
                 />
                 {errors.description && <span className={style.error}>{errors.description}</span>}
               </div>
-              <button className={style.submitBtn} type="submit">
+              <button onClick={()=>{
+              save()
+              }} className={style.submitBtn} type="submit">
                 Create
               </button>
             </form>

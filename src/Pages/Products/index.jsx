@@ -15,7 +15,11 @@ function Products() {
       return [];
     }
   };
-
+    function handleDelete (id) {  
+      const updated = data.filter((row)=> row.id !== id)
+      setData(updated) 
+      localStorage.setItem('ProductsData', JSON.stringify(updated))
+    }
   return (
     <>
       <Layout />
@@ -42,7 +46,9 @@ function Products() {
               </p>
               <p className={style.description}><span className={style.deskSpan}>Product desc: </span>
               {item.description}</p>
-              <button className={style.deleteBtn}>Delete</button>
+              <button onClick={()=>{
+                handleDelete(item.id)
+              }} className={style.deleteBtn}>Delete</button>
             </div>
           </div>
         ))}
