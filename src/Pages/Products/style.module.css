@@ -1,127 +1,56 @@
-.section{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;  
-  margin-top: 60px;
+.wrapper{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+   width: 1220px;
+   background: linear-gradient(127.09deg, rgba(6, 11, 40, 0.94) 19.41%, rgba(10, 14, 35, 0.49) 76.65%);
+   margin-left: 290px;
+   border-radius: 20px;
 }
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+.box{
+    display: flex;
+    flex-direction: column;
 }
-.box {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 453px;
-  height: fit-content;
-  border: 1px solid #ffffff42;
-  background: #5882c10f;
-  border-radius: 35px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 29px;
-  padding-left: 50px;
-  padding-right: 54.4px;
-  padding-bottom: 29px;
-  margin-left: 10px;
+.rasm{
+    width: 370px;
+    border-radius: 5px;
 }
-.title{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
+.wText{
+    padding-top: 30px;
+    padding-left: 25px;
+    margin-right: auto;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30.8px;
+    color: #fff;
 }
-.h2{
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 39px;
-  color: #fff;
+.subWrapper{ 
+    display: flex;
+    margin-top: 42.5px;
+    padding-bottom: 50px;
 }
-.subtext{
-  width: 400px;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 24px;
-  color: #fff;
-  margin-bottom: 40px;
+.img{
+    margin-bottom: 22px;
 }
-.passwordDiv {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.desk{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: aliceblue;
 }
-.password {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 20.88px;
-  color: #fff;
-}
-.passwordInp {
-  width: 350px;
-  height: 50px;
-  border-radius: 18px;
-  padding-left: 23px;
-  background-color: transparent;
-  border: 1px solid white;
-  color: #fff;
-  font-size: large;
-}
-.passwordInp::placeholder {
-  color: #bcbec0;
-}
-.passwordInp:hover{
-   border: inherit;
-  outline: 3px solid rgb(22, 173, 190);
-}
-.lastText{
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16.24px;
-  color: #fff;
-}
-.submitBtn {
-  width: 350px;
-  height: 50px;
-  background-color: #568fc4;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24.18px;
-  color: #fff;
-  border: 0;
-  border-radius: 11px;
-  margin-bottom: 22px;
-}
-
-.submitBtn:hover {
-  opacity: 0.5;
-}
-.a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 19.6px;
-  color: #fff;
-}
-.a:hover{
-  opacity: 0.5;
-}
-.deck{
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 19.6px;
-  color: #938c8c;
-}
-.error{
-  font-size: 18px; 
-  color: rgb(183, 99, 99);
-  font-weight: 600;
-  font-family: monospace;
-  font-weight: 600;
+.deleteBtn{
+    width: 86px;
+    height: 36px;
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #fff;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 15px;
+    color: #fff;
+    border-radius: 12px;
 }
