@@ -113,6 +113,10 @@
 .categoryInp::placeholder {
   color: #bcbec0;
 }
+.categoryInp:optional{
+  /* background-color: #131643; */
+  background-color: #131643;
+}
 .categoryInp:hover{
    border: inherit;
   outline: 3px solid rgb(22, 173, 190);

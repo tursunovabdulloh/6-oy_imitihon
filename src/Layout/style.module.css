@@ -90,7 +90,8 @@
     padding-left: 16px;
     cursor: pointer;
 }
-.nawlink1:active{
+.nawlink1.active{
+      
        background-color:  #1A1F37;
        border-radius: 12px;
        .spanImg{
@@ -111,13 +112,7 @@
     padding-left: 16px;
     cursor: pointer;
 }
-.nawlink2:active{
-       background-color:  #1A1F37;
-    border-radius: 12px;
-           .spanImg{
-           background-color: #0075FF;
-      }
-}
+
 .nawlink3{
     width: 220px;
     height: 55px;
@@ -131,7 +126,7 @@
     padding-left: 16px;
     cursor: pointer;
 }
-.nawlink3:active{
+.nawlink3.active{
        background-color:  #1A1F37;
        border-radius: 12px;
               .spanImg{
@@ -157,4 +152,10 @@ a.nawlink4:active{
            .spanImg{
            background-color: #0075FF;
       }
+}
+.active{
+       width: 220px;
+       height: 55px;
+       background-color:  #ca2d69;
+       border-radius: 12px;
 }

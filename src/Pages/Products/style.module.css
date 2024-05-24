@@ -29,6 +29,7 @@
 }
 .subWrapper{ 
     display: flex;
+    gap: 30px;
     margin-top: 42.5px;
     padding-bottom: 50px;
 }

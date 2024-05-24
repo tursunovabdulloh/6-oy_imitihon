@@ -75,8 +75,7 @@ function Dashboard() {
       });
       const res = await req.json();
       console.log(res);
-      localStorage.setItem("ProductsData", JSON.stringify([res]));
-      localStorage.setItem("ProductItem", JSON.stringify(newArr));
+      localStorage.setItem("ProductsData", JSON.stringify([ ...JSON.parse(localStorage.getItem('ProductsData')), res]));
       navigate("/products");
     } catch (error) {
       console.error("Error creating product:", error);
@@ -86,7 +85,7 @@ function Dashboard() {
   return (
     <>
       <Layout />
- <p className={style.location}><span className={style.loc}>Pages</span> {location.pathname} </p>
+ <p className={style.location}><span className={style.loc}>Pages</span> {location.pathname}</p>
       <section className={style.section}>
         <div className={style.container}>
           <div className={style.title}>

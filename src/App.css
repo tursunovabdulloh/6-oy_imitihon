@@ -41,3 +41,9 @@ body{
   background-size: contain;
   
 }
+.active{
+       width: 220px;
+       height: 55px;
+       background-color:  #ca2d69;
+       border-radius: 12px;
+}
