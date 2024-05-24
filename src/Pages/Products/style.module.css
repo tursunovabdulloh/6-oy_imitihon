@@ -1,16 +1,19 @@
 .wrapper{
    display: flex;
-   align-items: center;
+   align-items: flex-start;
    flex-direction: column;
    justify-content: center;
    width: 1220px;
    background: linear-gradient(127.09deg, rgba(6, 11, 40, 0.94) 19.41%, rgba(10, 14, 35, 0.49) 76.65%);
    margin-left: 290px;
    border-radius: 20px;
+   padding-left: 25px;
+   margin-top: 35px;
 }
 .box{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 .rasm{
     width: 370px;
@@ -18,7 +21,6 @@
 }
 .wText{
     padding-top: 30px;
-    padding-left: 25px;
     margin-right: auto;
     font-size: 22px;
     font-weight: 700;
@@ -39,6 +41,48 @@
     gap: 10px;
     color: aliceblue;
 }
+.location{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin-left: 300px;
+}
+.loc{
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 12px;
+ color: #746666;
+}
+.deskSpan{
+    font-size: 15px;
+    color: #A0AEC0;
+}
+.id{
+    font-size: 10px;
+  font-weight: 500;
+  line-height: 15px;
+  text-align: left;
+  color: #A0AEC0;
+}
+.productName{
+ font-size: 18px;
+ font-weight: 700;
+ line-height: 25.2px;
+ color: #fff;
+}
+.productCategory{
+font-size: 14px;
+font-weight: 700;
+line-height: 19.6px;
+color: #fff;
+}
+.productPrica{
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+}
+.description{
+    margin-bottom: 5px;
+}
 .deleteBtn{
     width: 86px;
     height: 36px;
@@ -48,9 +92,14 @@
     align-items: center;
     background-color: transparent;
     border: 1px solid #fff;
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 700;
     line-height: 15px;
     color: #fff;
     border-radius: 12px;
+}
+.deleteBtn:hover{
+    background-color: #fff;
+    border: 1px solid #746666;
+    color: #000;
 }

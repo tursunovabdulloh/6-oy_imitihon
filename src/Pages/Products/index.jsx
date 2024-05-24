@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import Layout from "../../Layout";
 import style from "./style.module.css";
+import { useLocation } from 'react-router-dom';
 
 function Products() {
   const [data, setData] = useState(JSON.parse(localStorage.getItem("ProductsData")) || []);
-
+  const location = useLocation(); 
   const relaiseArray = (images) => {
     try {
       const parsedImages = JSON.parse(images); 
@@ -18,6 +19,7 @@ function Products() {
   return (
     <>
       <Layout />
+      <p className={style.location}><span className={style.loc}>Pages</span> {location.pathname} </p>
       <div className={style.wrapper}>
        <p className={style.wText}>Products</p>
        <div className={style.subWrapper}>
@@ -27,13 +29,19 @@ function Products() {
               {relaiseArray(item.images).map((img) => (
                 <img  src={img} alt="" className={style.rasm} />
               ))}
-            </div>
+            </div>  
             <div className={style.desk}>
-              <p>id: {item.category.id}</p>
-              <p>Product name: {item.title}</p>
-              <p>Product Category: {item.category.name}</p>
-              <p>Product Price: {item.price} $</p>
-              <p>Product desc: {item.description}</p>
+              <p className={style.id}><span className={style.deskSpan}>id: #{item.category.id}</span></p>
+              <p className={style.productName}>
+              <span className={style.deskSpan}>Product name: </span>{item.title}</p>
+              <p className={style.productCategory}>
+                <span className={style.deskSpan}>Product Category:</span> {item.category.name}
+              </p>
+              <p className={style.productPrica}>
+                <span className={style.deskSpan}>Product Price: </span>{item.price} $
+              </p>
+              <p className={style.description}><span className={style.deskSpan}>Product desc: </span>
+              {item.description}</p>
               <button className={style.deleteBtn}>Delete</button>
             </div>
           </div>

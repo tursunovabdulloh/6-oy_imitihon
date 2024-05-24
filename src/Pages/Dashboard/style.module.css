@@ -28,6 +28,17 @@
   padding-bottom: 29px;
   margin-left: 10px;
 }
+.location{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin-left: 300px;
+}
+.loc{
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 12px;
+ color: #746666;
+}
 .title{
   display: flex;
   flex-direction: column;

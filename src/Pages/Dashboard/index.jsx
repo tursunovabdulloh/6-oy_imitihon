@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Layout from "../../Layout";
 import style from "./style.module.css";
 
 function Dashboard() {
   const [data, setData] = useState(JSON.parse(localStorage.getItem("usersData")) || []);
   const [categories, setCategories] = useState([]);
+  const location = useLocation();
   const [userInput, setUserInput] = useState({
     title: "",
     categoryId: "",
@@ -74,6 +75,7 @@ function Dashboard() {
   return (
     <>
       <Layout />
+ <p className={style.location}><span className={style.loc}>Pages</span> {location.pathname} </p>
       <section className={style.section}>
         <div className={style.container}>
           <div className={style.title}>
