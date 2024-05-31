@@ -1,9 +1,9 @@
 .wrapper{
    display: flex;
-   align-items: flex-start;
    flex-direction: column;
+   align-items: flex-start;
    justify-content: center;
-   width: 1200px;
+   width: 1218px;
    background: linear-gradient(127.09deg, rgba(6, 11, 40, 0.94) 19.41%, rgba(10, 14, 35, 0.49) 76.65%);
    margin-left: 290px;
    border-radius: 20px;
@@ -17,6 +17,8 @@
 }
 .rasm{
     width: 370px;
+    height: 192px;
+    object-fit: cover;
     border-radius: 5px;
 }
 .wText{
@@ -28,7 +30,8 @@
     color: #fff;
 }
 .subWrapper{ 
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;   
     gap: 30px;
     margin-top: 42.5px;
     padding-bottom: 50px;

@@ -15,7 +15,7 @@
     padding-left: 22px;
     padding-right: 23px;
 }
-.userDiv{
+.UserDiv{
     display: flex;
     align-items: center;
     gap: 16px;
@@ -90,14 +90,6 @@
     padding-left: 16px;
     cursor: pointer;
 }
-.nawlink1.active{
-      
-       background-color:  #1A1F37;
-       border-radius: 12px;
-       .spanImg{
-           background-color: #0075FF;
-      }
-    }
 .nawlink2{
     width: 220px;
     height: 55px;
@@ -112,7 +104,6 @@
     padding-left: 16px;
     cursor: pointer;
 }
-
 .nawlink3{
     width: 220px;
     height: 55px;
@@ -125,13 +116,6 @@
     color: #fff;  
     padding-left: 16px;
     cursor: pointer;
-}
-.nawlink3.active{
-       background-color:  #1A1F37;
-       border-radius: 12px;
-              .spanImg{
-           background-color: #0075FF;
-      }
 }
 .nawlink4{
     width: 220px;
@@ -146,16 +130,4 @@
     padding-left: 16px;
     cursor: pointer;
 }
-a.nawlink4:active{
-       background-color:  #1A1F37;
-    border-radius: 12px;
-           .spanImg{
-           background-color: #0075FF;
-      }
-}
-.active{
-       width: 220px;
-       height: 55px;
-       background-color:  #ca2d69;
-       border-radius: 12px;
-}
+

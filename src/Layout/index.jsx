@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import style from "./style.module.css"
 import home from "../assets/home.png"
 import chat from "../assets/bar-chart.png"
@@ -23,7 +23,7 @@ import { useState } from "react";
    <>
     <div className={style.sidebarWrapper}>
       <div className={style.firstDiv}>
-       <div  className={style.userDiv}>
+       <div  className={style.UserDiv}>
         {data.map((item, index) => (
           <>
           <img className={style.avatar} src={item.avatar} alt="" />
@@ -55,16 +55,16 @@ import { useState } from "react";
         </span>
          <p className={style.p3}>Sign Up</p>
          </NavLink> 
-         <NavLink className={style.nawlink4}>
-        {data.map((rows, index) => (
+         <Link className={style.nawlink4}>
+        {data.map((column, index) => (
           <>
        <span className={style.spanImg}>
         <img className={style.bg4} src={rocket} />    
         </span>
-         <p onClick={() => deleteData(rows.id)} className={style.p4}>Log out</p>
+         <p onClick={() => {deleteData(column.id)}} className={style.p4}>Log out</p>
           </>
         ))}
-         </NavLink>
+         </Link>
        </div>
     </div>
    </>

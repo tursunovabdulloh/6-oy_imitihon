@@ -42,8 +42,8 @@ body{
   
 }
 .active{
-       width: 220px;
-       height: 55px;
-       background-color:  #ca2d69;
-       border-radius: 12px;
+   width: 220px;
+   height: 55px;
+   background-color:  #1A1F37;
+   border-radius: 12px;   
 }
