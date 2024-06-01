@@ -45,7 +45,6 @@ export default function Login() {
       setErrors(newErrors);
       return;
     }
-
     const data = JSON.parse(localStorage.getItem("usersData")) ?? [];
 
     const user = data.filter(({ email, password }) => {
@@ -60,7 +59,6 @@ export default function Login() {
       localStorage.setItem("user", JSON.stringify(false));
     }
   };
-
   const AntSwitch = styled(Switch)(({ theme }) => ({
     width: 28,
     height: 16,
