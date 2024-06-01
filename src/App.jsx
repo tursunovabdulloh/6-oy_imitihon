@@ -23,25 +23,23 @@ export default function App() {
   }
   const router = createBrowserRouter(
     [
-  {
-    path: "/",
-    element: (
-      <Login/>
-    ),
-  },
-  {
-    path: "/signup",
-    element: <SignUp />,
-  },
-  {
-    path: "/dashboard",
-    element: <Dashboard /> ,
-  },
-    {
-    path: "/products",
-    element: <Products /> ,
-  },
-]
+      {
+        path: "/",
+        element: <Login />,
+      },
+      {
+        path: "/signup",
+        element: <SignUp />,
+      },
+      {
+        path: "/dashboard",
+        element: <Dashboard />,
+      },
+      {
+        path: "/products",
+        element: <Products />,
+      },
+    ]
     // createRoutesFromElements(
     //   <Routes>
     //     <Route path="/" element={<Login />} />
@@ -49,7 +47,7 @@ export default function App() {
     //     <Route
     //       path="/dashboard"
     //       element={
-    //           <Dashboard />         
+    //           <Dashboard />
     //       }
     //     ></Route>
     //   </Routes>

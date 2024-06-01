@@ -14,7 +14,7 @@
   margin-right: auto;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding-top: 299px;
+  padding-top: 140px;
   padding-left: 96px;
   padding-right: 61px;
 }
@@ -30,11 +30,11 @@
   color: #fff;
 }
 .pText {
- font-size: 14px;
- font-weight: 500;
- line-height: 19.6px;
- margin-bottom: 35.5px;
- color:  #A0AEC0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.6px;
+  margin-bottom: 35.5px;
+  color: #a0aec0;
 }
 .emailDiv {
   display: flex;
@@ -61,8 +61,8 @@
 .emailInp::placeholder {
   color: #bcbec0;
 }
-.emailInp:hover{
-   border: inherit;
+.emailInp:hover {
+  border: inherit;
   outline: 3px solid rgb(22, 173, 190);
 }
 .passwordDiv {
@@ -84,11 +84,11 @@
 .passwordInp::placeholder {
   color: #bcbec0;
 }
-.passwordInp:hover{
+.passwordInp:hover {
   border: inherit;
   outline: 3px solid rgb(22, 173, 190);
 }
-.Stack{
+.Stack {
   margin-bottom: 36px;
 }
 .subtext {
@@ -100,7 +100,7 @@
 .submitBtn {
   width: 350px;
   height: 50px;
-  background-color: #0075FF;
+  background-color: #0075ff;
   font-size: 20px;
   font-weight: 700;
   line-height: 24.18px;
@@ -109,7 +109,7 @@
   border-radius: 11px;
   margin-bottom: 50px;
 }
-.submitBtn:hover{
+.submitBtn:hover {
   cursor: pointer;
   opacity: 0.5;
 }
@@ -124,9 +124,8 @@
   border: 0;
   border-radius: 11px;
   margin-bottom: 59px;
-
 }
-.signupBtn:hover{
+.signupBtn:hover {
   opacity: 0.5;
 }
 .a {
@@ -134,19 +133,19 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
-font-size: 14px;
-font-weight: 700;
-line-height: 19.6px;
-color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.6px;
+  color: #fff;
 }
-.a:hover{
+.a:hover {
   opacity: 0.5;
 }
-.deck{
-font-size: 14px;
-font-weight: 500;
-line-height: 19.6px;
-color: #938c8c;
+.deck {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.6px;
+  color: #938c8c;
 }
 .lastText {
   font-size: 14px;
@@ -162,8 +161,8 @@ color: #938c8c;
   line-height: 16.7px;
   color: #fff;
 }
-.errorText{
-  font-size: 18px; 
+.errorText {
+  font-size: 18px;
   color: rgb(183, 99, 99);
   font-weight: 600;
   font-family: monospace;
